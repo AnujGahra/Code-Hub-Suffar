@@ -6,23 +6,39 @@ using namespace std;
 
 
 class Human {
-    private:
-    int a;
-    protected:
-    int b;
+
+    // Access Modifiers
+
+    // private:
+    // int a;
+    // protected:
+    // int b;
+    // public:
+    // int c;
+
+
+
+
+    // void fun(){
+    //     a = 10;
+    //     b = 20;
+    //     c = 30;
+    // }
+
     public:
-    int c;
+    string name;
+    int age, weight;
+};
 
-
-    void fun(){
-        a = 10;
-        b = 20;
-        c = 30;
-    }
+class Student: protected Human{
+    int roll_number, fees;
 };
 
 int main(){
-    Human Anuj;
+    // Human Anuj;
     // Anuj.c = 10;
-    Anuj.fun();
+    // Anuj.fun();
+    Student A;
+    A.name = "Anuj";
+
 };
